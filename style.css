@@ -1,0 +1,117 @@
+section {
+    display: flex;
+    justify-content: center;
+    margin: 70px;
+}
+body{
+    background-color: antiquewhite;
+}
+.box {
+    width: 200px;
+    height: 580px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    animation-delay: 3s;
+}
+
+.bola {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: rgb(246, 0, 0);
+    margin: 0 auto;
+    opacity: 0.2;
+    transition: opacity 0.5s ease;
+    background-color: aliceblue;
+    animation-delay: 3s;
+}
+
+.red {
+    animation: redLight 6s infinite;
+    animation-delay: 3s;
+}
+
+.yellow {
+    animation: yellowLight 6s infinite;
+    animation-delay: 3s;
+}
+
+.green {
+    animation: greenLight 6s infinite;
+    animation-delay: 3s;
+}
+
+
+@keyframes redLight {
+    0%, 33% {
+        opacity: 1;
+        background-color: red;
+    }
+    34%, 100% {
+        opacity: 0.1;
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+@keyframes yellowLight {
+    0%, 33% {
+        opacity: 0.2;
+        background-color: rgb(255, 255, 255);
+    }
+    34%, 66% {
+        opacity: 1;
+        background-color: yellow;
+    }
+    67%, 100% {
+        opacity: 0.2;
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+@keyframes greenLight {
+    0%, 66% {
+        opacity: 0.2;
+        background-color: rgb(255, 255, 255);
+    }
+    67%, 100% {
+        opacity: 1;
+        background-color: rgb(0, 159, 0);
+    }
+}
+
+
+h1{
+    align-items: center;
+    font-size: 60px;
+    animation-delay: 3s;
+}
+
+
+
+
+
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    animation: changeColor 5s infinite; 
+    animation-delay: 3s;
+}
+
+@keyframes changeColor {
+    0% {
+        color: red;
+    }
+    50% {
+        color: yellow;
+    }
+    100% {
+        color: green;
+    }
+    
+}
